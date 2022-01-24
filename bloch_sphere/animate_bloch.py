@@ -326,16 +326,16 @@ def draw_bloch_sphere(d, inner_proj=euclid3d.identity(3), label='', axis=None,
         arrow = draw.Marker(-0.1, -0.5, 0.9, 0.5, scale=4, orient='auto')
         arrow.append(draw.Lines(-0.1, -0.5, -0.1, 0.5, 0.9, 0, fill='black',
                                 close=True))
-        g.append(draw.Line(*inner_xy.p2(-0.65, 0, 0), *inner_xy.p2(0.6, 0, 0),
-                           stroke='black', stroke_width=0.015,
-                           marker_end=arrow),
-                z=z_center)
-        g.append(draw.Line(*inner_xy.p2(0, -0.65, 0), *inner_xy.p2(0, 0.6, 0),
-                           stroke='black', stroke_width=0.015,
-                           marker_end=arrow),
-                z=z_center)
+        # g.append(draw.Line(*inner_xy.p2(-0.65, 0, 0), *inner_xy.p2(0.6, 0, 0),
+        #                    stroke='black', stroke_width=0.015,
+        #                    marker_end=arrow),
+        #         z=z_center)
+        # # g.append(draw.Line(*inner_xy.p2(0, -0.65, 0), *inner_xy.p2(0, 0.6, 0),
+        # #                    stroke='black', stroke_width=0.015,
+        # #                    marker_end=arrow),
+        # #         z=z_center)
         g.append(draw.Line(*inner_xy.p2(0, 0, -0.65), *inner_xy.p2(0, 0, 0.6),
-                           stroke='black', stroke_width=0.015,
+                           stroke='black', stroke_width=0.05,
                            marker_end=arrow),
                 z=z_center)
         for pt, (x_off, y_off), elem in inner_labels:

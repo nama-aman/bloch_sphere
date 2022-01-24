@@ -1,3 +1,5 @@
+### This is an edited version of package bloch_sphere
+[link for original](https://github.com/cduck/bloch_sphere)
 # Qubit Bloch Sphere Visualization
 
 A collection of visualization tools for the qubit Bloch sphere.
