@@ -4,12 +4,12 @@
 
 A collection of visualization tools for the qubit Bloch sphere.
 The Bloch sphere is a useful representation of the state of a single-qubit quantum computer.
-
+<!-- 
 ![X gate comparison with Hadamard-Z-Hadamard](https://raw.githubusercontent.com/cduck/bloch_sphere/master/examples/hzh_x_compare.gif)
 
 * [Animations for many common gates](https://github.com/cduck/bloch_sphere/blob/master/examples/common_gates.md)
 
-See also: [Feynman path integral visualization](https://github.com/cduck/feynman_path)
+See also: [Feynman path integral visualization](https://github.com/cduck/feynman_path) -->
 
 # Install
 
@@ -17,6 +17,11 @@ bloch\_sphere is available on PyPI:
 
 ```bash
 python3 -m pip install bloch_sphere
+```
+To install this particular package
+```
+git clone https://github.com/nama-aman/bloch_sphere.git && cd bloch_sphere
+python setup.py develop --user
 ```
 
 ## Prerequisites
@@ -38,7 +43,7 @@ Using [homebrew](https://brew.sh/):
 ```bash
 brew install cairo
 ```
-
+<!-- 
 # Usage
 
 This package provides a command line tool to generate animations.
@@ -190,4 +195,4 @@ See [the example code](https://github.com/cduck/bloch_sphere/blob/master/example
 Any single-qubit gate can also be decomposed into a series of three Z rotations with fixed X rotations of π/2 (1/4 turn) in between.
 See [the example code](https://github.com/cduck/bloch_sphere/blob/master/examples/synthesize_from_rz_rx_rz.py) that generated the below animation.
 
-![Example output animation](https://raw.githubusercontent.com/cduck/bloch_sphere/master/examples/random_as_zxzxz.gif)
+![Example output animation](https://raw.githubusercontent.com/cduck/bloch_sphere/master/examples/random_as_zxzxz.gif) -->
